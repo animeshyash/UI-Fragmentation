@@ -1,0 +1,23 @@
+export const BurnPage = () => {
+  // Component content...
+  return (
+    <div>
+      <DashboardLayoutStyled className="burnpage">
+        <div
+          className="top_conatiner burnpage"
+          style={{ alignItems: "flex-start" }}
+        >
+          <div className="info_box filled">
+            <h1 className="title">App TOKEN BURN</h1>
+            <p className="description medium"></p>
+            <BurnButtonBar />
+          </div>
+          <BurnStatsContainer />
+        </div>
+      </DashboardLayoutStyled>
+      <TransactionTable />
+      <ChainSelector />
+      <AppToast />
+    </div>
+  );
+};
